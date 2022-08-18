@@ -6,6 +6,7 @@
   - [Project 2 To do list Advance <a name="todolist"></a>](#project-2-to-do-list-advance-)
     - [Sub paragraph <a name="subparagraph1"></a>](#sub-paragraph-)
   - [Another paragraph <a name="paragraph2"></a>](#another-paragraph-)
+- [web-dev-class](#web-dev-class)
 
 ## Introduction <a name="introduction"></a>
 
@@ -16,11 +17,11 @@
 
 ## Project 1 To do list <a name="todolist"></a>
 
+- vsCode
 - html tags
   - h1 - h6, head, title, ul, button, form, input, p
-- css box model
-- Dom Events
-- Get the element
+- css box model, padding, margin, border
+- document object, DOM
   - document.getElmentById,
   - document.getElmentsByClassName
   - document.querySelector("p");
@@ -35,4 +36,5 @@
 ### Sub paragraph <a name="subparagraph1"></a>
 
 ## Another paragraph <a name="paragraph2"></a>
+
 # web-dev-class
