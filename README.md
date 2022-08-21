@@ -20,6 +20,63 @@
 - vsCode
 - html tags
   - h1 - h6, head, title, ul, button, form, input, p
+
+```
+  <div class="container todo" id="todo">
+      <h1>To Do List</h1>
+      <h2>Add item</h2>
+      <input type="text" id="input" />
+      <button class="btn btn-primary" onclick="AddItem()">Add item</button>
+      <h3>To do list</h3>
+      <ul id="ul-list-item">
+        <li>item 1</li>
+      </ul>
+    </div>
+```
+
+```
+body {
+  background-color: white;
+}
+
+.todo {
+  width: 800px;
+  height: 800px;
+  background-color: #f3f3f3;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+li {
+  font-size: x-large;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+```
+
+```
+function AddItem() {
+  let input = document.getElementById("input").value;
+  let ul = document.getElementById("ul-list-item");
+  let li = document.createElement("li");
+  li.appendChild(document.createTextNode(`${input}`));
+  ul.appendChild(li);
+  console.log(input);
+}
+
+```
+
 - css box model, padding, margin, border
 - document object, DOM
   - document.getElmentById,
