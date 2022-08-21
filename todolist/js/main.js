@@ -4,5 +4,4 @@ function AddItem() {
   let li = document.createElement("li");
   li.appendChild(document.createTextNode(`${input}`));
   ul.appendChild(li);
-  console.log(input);
 }
