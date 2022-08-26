@@ -3,6 +3,9 @@
 - [Table of contents](#table-of-contents)
   - [Introduction <a name="introduction"></a>](#introduction-)
   - [Project 1 To do list <a name="todolist"></a>](#project-1-to-do-list-)
+  - [Class 1 note <a name="note 1"></a>](#class-1-note-)
+  - [Class 2 note <a name="note 2"></a>](#class-2-note-)
+    - [Funtionality](#funtionality)
   - [Project 2 To do list Advance <a name="todolist"></a>](#project-2-to-do-list-advance-)
     - [Sub paragraph <a name="subparagraph1"></a>](#sub-paragraph-)
   - [Another paragraph <a name="paragraph2"></a>](#another-paragraph-)
@@ -17,52 +20,57 @@
 
 ## Project 1 To do list <a name="todolist"></a>
 
+## Class 1 note <a name="note 1"></a>
+
 - vsCode
 - html tags
   - h1 - h6, head, title, ul, button, form, input, p
 
 ```
-  <div class="container todo" id="todo">
-      <h1>To Do List</h1>
-      <h2>Add item</h2>
-      <input type="text" id="input" />
-      <button class="btn btn-primary" onclick="AddItem()">Add item</button>
-      <h3>To do list</h3>
-      <ul id="ul-list-item">
-        <li>item 1</li>
-      </ul>
+  <body>
+    <div class="container todo">
+      <h1 id="h1" class="text-center">Todo List App</h1>
+      <div class="form-group">
+        <h2 for="itemInput">Add Item</h2>
+        <input type="text" class="form-control" name="" id="input" />
+      </div>
+      <button id="addButton" class="btn btn-primary" onclick="addItem()">
+        Add To List
+      </button>
+      <button id="clearButton" class="btn btn-danger">Clear Todo List</button>
+      <h3>Todo List</h3>
+      <ul id="ul-list-item"></ul>
     </div>
+  </body>
 ```
 
 ```
-body {
-  background-color: white;
-}
-
 .todo {
   width: 800px;
   height: 800px;
   background-color: #f3f3f3;
-  text-align: center;
-  margin-top: 30px;
   border-radius: 5px;
+  margin-top: 30px;
 }
-
 li {
   font-size: x-large;
   background-color: white;
   width: 100%;
   height: auto;
-  margin: 10px;
+  margin-top: 10px;
+  padding: 8px;
 }
 
 ul {
-  list-style-type: none;
   padding: 0px;
   margin: 0px;
+  list-style-type: none;
 }
 
-
+#input {
+  height: 60px;
+  font-size: x-large;
+}
 ```
 
 ```
@@ -72,8 +80,8 @@ function AddItem() {
   let li = document.createElement("li");
   li.appendChild(document.createTextNode(`${input}`));
   ul.appendChild(li);
-  console.log(input);
 }
+
 
 ```
 
@@ -84,6 +92,19 @@ function AddItem() {
   - document.querySelector("p");
 
 ![todo](todo.jpg)
+
+## Class 2 note <a name="note 2"></a>
+
+### Funtionality
+
+- Delete items, delete button, clear all
+- javaScript
+  - objects
+  - callback funtion
+  - obj destructuring
+  - arrow functions
+- Event Listners
+  - Window.addEventListner('load', ()=>{})
 
 ## Project 2 To do list Advance <a name="todolist"></a>
 
