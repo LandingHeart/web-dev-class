@@ -10,6 +10,8 @@
     - [Sub paragraph <a name="subparagraph1"></a>](#sub-paragraph-)
   - [Another paragraph <a name="paragraph2"></a>](#another-paragraph-)
 - [web-dev-class](#web-dev-class)
+- [resource](#resource)
+- [frontend challenge resources](#frontend-challenge-resources)
 
 ## Introduction <a name="introduction"></a>
 
@@ -25,26 +27,35 @@
 - vsCode
 - html tags
   - h1 - h6, head, title, ul, button, form, input, p
+- css box model, padding, margin, border
+- document object, DOM
+  - document.getElmentById,
+  - document.getElmentsByClassName
+  - document.querySelector("p");
 
-```
-  <body>
-    <div class="container todo">
-      <h1 id="h1" class="text-center">Todo List App</h1>
-      <div class="form-group">
-        <h2 for="itemInput">Add Item</h2>
-        <input type="text" class="form-control" name="" id="input" />
-      </div>
-      <button id="addButton" class="btn btn-primary" onclick="addItem()">
-        Add To List
-      </button>
-      <button id="clearButton" class="btn btn-danger">Clear Todo List</button>
-      <h3>Todo List</h3>
-      <ul id="ul-list-item"></ul>
+```javascript
+<body>
+  <div class="container todo">
+    <h1 id="h1" class="text-center">
+      Todo List App
+    </h1>
+    <div class="form-group">
+      <h2 for="itemInput">Add Item</h2>
+      <input type="text" class="form-control" name="" id="input" />
     </div>
-  </body>
+    <button id="addButton" class="btn btn-primary" onclick="addItem()">
+      Add To List
+    </button>
+    <button id="clearButton" class="btn btn-danger">
+      Clear Todo List
+    </button>
+    <h3>Todo List</h3>
+    <ul id="ul-list-item"></ul>
+  </div>
+</body>
 ```
 
-```
+```css
 .todo {
   width: 800px;
   height: 800px;
@@ -73,7 +84,7 @@ ul {
 }
 ```
 
-```
+```javascript
 function AddItem() {
   let input = document.getElementById("input").value;
   let ul = document.getElementById("ul-list-item");
@@ -81,15 +92,7 @@ function AddItem() {
   li.appendChild(document.createTextNode(`${input}`));
   ul.appendChild(li);
 }
-
-
 ```
-
-- css box model, padding, margin, border
-- document object, DOM
-  - document.getElmentById,
-  - document.getElmentsByClassName
-  - document.querySelector("p");
 
 ![todo](todo.jpg)
 
@@ -116,3 +119,15 @@ function AddItem() {
 ## Another paragraph <a name="paragraph2"></a>
 
 # web-dev-class
+
+# resource
+
+- https://developer.mozilla.org/en-US/docs/Web
+- https://www.w3schools.com/html/default.asp
+- https://www.w3schools.com/css/default.asp
+- https://www.w3schools.com/js/default.asp
+- https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+
+# frontend challenge resources
+
+- https://www.frontendmentor.io/challenges
