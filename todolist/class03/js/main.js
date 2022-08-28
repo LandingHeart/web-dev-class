@@ -20,11 +20,7 @@ window.addEventListener("load", () => {
   fetchData();
 });
 
-function fetchData() {
-  fetch("http://localhost:3000/items")
-    .then((res) => res.json())
-    .then((data) => displayList(data));
-}
+function fetchData() {}
 
 function displayList(items) {
   let ul = document.getElementById("ul-list-item");
