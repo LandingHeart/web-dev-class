@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "item": "buy candy"
+    },
+    {
+      "id": 1,
+      "item": "buy box of water"
+    },
+    {
+      "id": 2,
+      "item": "buy groceries"
+    }
+  ]
+}

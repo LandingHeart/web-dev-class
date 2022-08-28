@@ -1,52 +1,39 @@
-let num = 1.123;
-
-let str = "i am str";
-
-let obj = {
-  key: "value",
-};
-
-// let arr = ["str", 1, { key: "value" }];
-
-// console.log(arr);
 const todoItems = {
   items: [
-    { id: 0, item: "buy sugar" },
+    {
+      id: 0,
+      item: "buy candy",
+    },
     {
       id: 1,
-      item: "buy box water",
+      item: "buy box of water",
     },
-    { id: 2, item: "buy groceries" },
+    {
+      id: 2,
+      item: "buy groceries",
+    },
   ],
 };
-
-// const items = [
-//   { id: 0, item: "buy candy" },
-//   {
-//     id: 1,
-//     item: "buy box water",
-//   },
-//   { id: 2, item: "buy groceries" },
-// ];
-
 const { items } = todoItems;
+
 window.addEventListener("load", () => {
-  displayList(items);
+  fetchData();
 });
 
-// document.getElementsByClassName
-// document.getElementById
-// document.get
+function fetchData() {
+  fetch("http://localhost:3000/items")
+    .then((res) => res.json())
+    .then((data) => displayList(data));
+}
 
 function displayList(items) {
   let ul = document.getElementById("ul-list-item");
   ul.innerHTML = "";
-  items.forEach((element, id) => {
-    let ul = document.getElementById("ul-list-item");
+  items.forEach((ele, id) => {
     let li = document.createElement("li");
     let btn = document.createElement("button");
     let p = document.createElement("p");
-    p.textContent = `${element.item}`;
+    p.textContent = `${ele.item}`;
     btn.setAttribute("class", "delete-btn btn btn-primary");
     btn.textContent = "Delete";
     btn.addEventListener("click", () => {
@@ -55,13 +42,20 @@ function displayList(items) {
     li.setAttribute("id", "li-item");
     li.appendChild(p);
     li.appendChild(btn);
-    ul.appendChild(li);
+    ul.append(li);
   });
 }
 
-function deleteItem(id) {
-  const { items } = todoItems;
-  items.splice(id, 1);
+function addItem(item) {
+  let inputValue = document.getElementById("input").value;
+  const newId = items.length;
+  const obj = { id: newId, item: inputValue };
+  items.push(obj);
+  displayList(items);
+}
+
+function deleteItem(index) {
+  items.splice(index, 1);
   displayList(items);
 }
 

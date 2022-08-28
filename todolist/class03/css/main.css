@@ -1,0 +1,35 @@
+.todo {
+  width: 800px;
+  height: 800px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  background-color: gray;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 15px;
+}
+li:hover {
+  background-color: aquamarine;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  list-style-type: none;
+}
+
+#input {
+  height: 60px;
+  font-size: x-large;
+}
