@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": 0,
+      "item": "Fetch Training"
+    },
+    {
+      "id": 1,
+      "item": "Obedient training"
+    },
+    {
+      "id": 2,
+      "item": "Walk the dog"
+    }
+  ]
+}

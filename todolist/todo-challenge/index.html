@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>TO DO LIST</title>
+  </head>
+  <title>Todo list Challenge</title>
+  <body>
+    <div class="container todo">
+      <h1 id="h1" class="text-center">Todo List App Challenge</h1>
+
+      <div class="input-container">
+        <div class="form-group">
+          <input
+            placeholder="todo task..."
+            type="text"
+            class="form-control"
+            id="input" />
+        </div>
+      </div>
+      <!-- tabs -->
+      <div class="tab tab-btn-container">
+        <div class="tablinks tab-one active">Current Todos</div>
+        <div class="tablinks tab-two">Completed Todos</div>
+      </div>
+
+      <div class="tabcontent" id="todo">
+        <ul id="todo-list"></ul>
+      </div>
+
+      <div class="tabcontent" id="complete">
+        <ul id="completed-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>

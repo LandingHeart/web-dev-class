@@ -1,0 +1,15 @@
+.flex-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+
+.col1,
+.col2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: aquamarine;
+  height: 500px;
+}

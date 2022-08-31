@@ -1,0 +1,92 @@
+.todo {
+  width: 800px;
+  height: 800px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  list-style-type: none;
+}
+
+.tab-btn-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tab-btn-container div {
+  font-size: large;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-group {
+  flex: 1;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 5px;
+}
+#input {
+  height: auto;
+  font-size: x-large;
+  flex: 1;
+}
+
+.input-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: large;
+  color: white;
+}
+.create-btn {
+  background-color: #131515;
+}
+
+.clear-btn {
+  background-color: #339989;
+}
+.delete-btn {
+  background-color: #339989;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.tablinks {
+  background-color: #ffff;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px;
+}
+.tablinks:hover {
+  background-color: #7de2d1;
+}
+
+.active {
+  border-bottom: 3px solid #339989;
+}
