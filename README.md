@@ -131,3 +131,4 @@ function AddItem() {
 # frontend challenge resources
 
 - https://www.frontendmentor.io/challenges
+- https://leetcode.com/discuss/interview-question/742791/front-end-interview-questions
